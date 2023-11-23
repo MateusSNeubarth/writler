@@ -10,9 +10,6 @@ const TextSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        avaluation: { // 1 - 5 number based off the avaluation of the user that sent the order
-            type: Number, 
-        },
         answered_to: { // order Id that was answered to 
             type: String,
         }
