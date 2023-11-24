@@ -30,11 +30,11 @@ export const login = async (req, res, next) => {
         if(!user) return next(createError(404, "User not found"));
 
         const isPasswordCorrect = await bcrypt.compare(req.body.password, user.password);
-        if(!isPasswordCorrect)
+        if(!isPasswordCorrect) 
             return next(createError(400, "Wrong password or username"));
 
         const token = jwt.sign(
-            { id:user._id },
+            { id:user._id }, 
             process.env.JWT
         );
 
@@ -44,7 +44,7 @@ export const login = async (req, res, next) => {
                 httpOnly: true,
             })
             .status(200)
-            .json({ details: { ...otherDetails }});
+            .json({ details: { ...otherDetails } });
     } catch (err) {
         next(err);
     }

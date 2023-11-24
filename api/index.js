@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import usersRoute from "./routes/user.js";
 import authRoute from "./routes/auth.js";
+import textRoute from "./routes/text.js";
 const app = express();
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.use(express.json());
 //routes
 app.use("/api/users", usersRoute);
 app.use("/api/auth", authRoute);
+app.use("/api/texts", textRoute);
 
 app.use((err, req, res, next) => {
     const errorStatus = err.status || 500;

@@ -10,9 +10,13 @@ const TextSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
+        from: {
+            type: String,
+            required: true,
+        },
         answered_to: { // order Id that was answered to 
             type: String,
-        }
+        },
     }
 );
 
