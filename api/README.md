@@ -1,18 +1,17 @@
 # writler API
 
-## Frameworks
+### Frameworks
 > NodeJS
+
 > Express
-## Database and database conection
+### Database and database conection
 > MongoDB
 > Mongoose
-## Security and Accessability
+### Security and Accessability
 > JsonWebToken
+
 > Bcrypt
-## Development tools
+### Development tools
 > Nodemon
+
 > Insomnia
-
-
-
-
