@@ -5,6 +5,8 @@ import cors from 'cors';
 import usersRoute from "./routes/user.js";
 import authRoute from "./routes/auth.js";
 import textRoute from "./routes/text.js";
+import orderRoute from "./routes/order.js";
+import cookieParser from 'cookie-parser';
 const app = express();
 dotenv.config();
 
@@ -23,6 +25,7 @@ mongoose.connection.on("diconnected", () => {
 });
 
 //middlewares
+app.use(cookieParser());
 app.use(cors());
 app.use(express.json());
 
@@ -30,6 +33,7 @@ app.use(express.json());
 app.use("/api/users", usersRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/texts", textRoute);
+app.use("/api/orders", orderRoute);
 
 app.use((err, req, res, next) => {
     const errorStatus = err.status || 500;

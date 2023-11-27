@@ -10,7 +10,7 @@ const TextSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        from: {
+        from: { // id from user that sent the text
             type: String,
             required: true,
         },

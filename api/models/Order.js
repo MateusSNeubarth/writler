@@ -10,9 +10,12 @@ const OrderSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
+        user_id: { // id from the user that sent
+            type: String,
+            required: true,
+        },
         limit_date: { // date limit that user can receive answers
             type: Date,
-            required: true,
         },
         answers: {
             type: [String], // Texts that were sent as an answer to the order
