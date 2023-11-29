@@ -18,7 +18,7 @@ const RegisterPage = () => {
 
     const handleClick = async (e) => {
         try {
-            await axios.post("/auth/register", credentials);
+            await axios.post("http://localhost:8800/api/auth/register", credentials);
             navigate("/");
         } catch (err) {
             setError(err.response.data);

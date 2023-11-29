@@ -1,0 +1,45 @@
+.header {
+    width: min(100%);
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2F2F2F;
+}
+
+.title {
+    margin-left: 10%;
+    float: left;
+    color: #A4A5A4;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.hList {
+    margin-right: 10%;
+    float: right;
+}
+
+.hListItem {
+    list-style: none;
+}
+
+.hButton {
+    background-color: #4D4D4D;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #A4A5A4;
+    cursor: pointer;
+}
