@@ -3,9 +3,9 @@
     height: 954px;
     position: fixed;
     display: flex;
+    flex-direction: column;
     margin-top: 80px;
-    float: left;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #404040;
 }
 
@@ -14,4 +14,28 @@
     text-align: center;
     font-size: 24px;
     color: #B1AFAF;
+}
+
+.sidebar hr {
+    width: 100%;
+    color: #4D4D4D;
+}
+
+.orderContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.orderContainer button {
+    background-color: #4D4D4D;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #A4A5A4;
+    cursor: pointer;
 }

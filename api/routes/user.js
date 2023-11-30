@@ -5,16 +5,16 @@ import { verifyUser } from '../utils/verifyToken.js';
 const router = express.Router();
 
 //UPDATE
-router.put('/:id', verifyUser, updateUser);
+router.put('/:id', updateUser);
 //DELETE
 router.delete('/:id', verifyUser, deleteUser);
 //GET
-router.get('/:id', verifyUser, getUser);
+router.get('/:id', getUser);
 //GET ALL
 router.get('/', getUsers);
 //GET USER ORDERS
-router.get('/orders/:id', verifyUser, getUserOrders);
+router.get('/orders/:id', getUserOrders);
 //GET USER TEXTS
-router.get('/texts/:id', verifyUser, getUserTexts);
+router.get('/texts/:id', getUserTexts);
 
 export default router;

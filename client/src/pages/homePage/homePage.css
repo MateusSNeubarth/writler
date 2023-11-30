@@ -8,3 +8,11 @@
     background-color: #B1AFAF;
 }
 
+.addBtnContainer {
+    position: sticky;
+    margin-bottom: 2%;
+    margin-left: 90%;
+    display: flex;
+    align-items: flex-end;
+    float: right;
+}

@@ -5,6 +5,7 @@ import UserPage from './pages/userPage/UserPage';
 import CreatetextPage from './pages/createtextPage/CreatetextPage';
 import OrderPage from './pages/orderPage/OrderPage';
 import RegisterPage from './pages/registerPage/RegisterPage';
+import CreateOrderPage from './pages/createOrderPage/CreateOrderPage';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <Route path='/home' element={<HomePage />} />
                 <Route path='/userpage/:id' element={<UserPage />} />
                 <Route path='/createtext/:orderid' element={<CreatetextPage />} />
+                <Route path='/createorder' element={<CreateOrderPage />} />
                 <Route path='/order/:id' element={<OrderPage />} />
             </Routes>
         </Router>
