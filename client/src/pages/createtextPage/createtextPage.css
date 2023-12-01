@@ -1,0 +1,84 @@
+.createTextPage {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F2F2F;
+}
+
+.pageContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orderInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orderInfo h1 {
+    background-color: #4D4D4D;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.orderInfo span {
+    text-align: center;
+    width: 50%;
+    background-color: #4D4D4D;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.formContainer {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+.formInputTitle {
+    height: 20px;
+    width: 90%;
+    background-color: #4D4D4D;
+    border: none;
+    border-radius: 8px;
+}
+
+.formInputBody {
+    height: 20px;
+    padding-bottom: 50px;
+    width: 90%;
+    background-color: #4D4D4D;
+    border: none;
+    border-radius: 8px;
+}
+
+.formButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #1c1c1c;
+    color: #858585;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formButton:hover {
+    background-color: #4D4D4D;
+    border: solid #1c1c1c;
+}

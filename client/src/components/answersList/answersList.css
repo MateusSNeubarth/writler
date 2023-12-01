@@ -1,0 +1,16 @@
+.alContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aTitle {
+    display: flex;
+    font-size: 24px;
+}
+
+.aBody {
+    font-size: 20px;
+    display: flex;
+}

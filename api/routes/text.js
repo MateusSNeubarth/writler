@@ -4,7 +4,7 @@ import { createText, updateText, deleteText, getText, getTexts } from '../contro
 const router = express.Router();
 
 //CREATE
-router.post("/:userid", createText);
+router.post("/:userid/:orderid", createText);
 //UPDATE
 router.put("/:id", updateText);
 //DELETE

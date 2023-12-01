@@ -4,7 +4,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 48px;
     justify-content: flex-start;
     background-color: #404040;
 }

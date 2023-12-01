@@ -38,7 +38,7 @@ const UserPage = () => {
                     />
                 </h1>
                 <h1 className='info'>
-                    E-mail: 
+                    Email: 
                     <span>{user.email}</span>
                     <FontAwesomeIcon 
                         icon={faPen} 

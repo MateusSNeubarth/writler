@@ -24,6 +24,7 @@
 .info {
     display: flex;
     align-items: center;
+    font-size: 24px;
     margin: 5% 5% 0 5%;
     background-color: #A5A5A4;
     border-radius: 8px;

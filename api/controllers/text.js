@@ -4,8 +4,9 @@ import User from '../models/User.js';
 
 export const createText = async (req, res, next) => {
     const userid = req.params.userid;
-    const { title, body, answered_to } = req.body;
-    const newText = new Text({ title: title, body: body, from: userid, answered_to: answered_to });
+    const orderid = req.params.orderid
+    const { title, body } = req.body;
+    const newText = new Text({ title: title, body: body, from: userid, answered_to: orderid });
 
     try {
         const savedText = await newText.save();
@@ -17,7 +18,7 @@ export const createText = async (req, res, next) => {
             next(err);
         }
         try {
-            await Order.findByIdAndUpdate(answered_to, {
+            await Order.findByIdAndUpdate(orderid, {
                 $push : { answers: savedText._id},
             });
         } catch (err) {

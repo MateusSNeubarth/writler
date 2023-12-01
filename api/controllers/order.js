@@ -69,3 +69,17 @@ export const getOrders = async (req, res, next) => {
         next(err);
     }
 };
+
+export const getOrderTexts = async (req, res, next) => {
+    try {
+        const order = await Order.findById(req.params.id);
+        const list = await Promise.all(
+            order.answers.map((answer) => {
+                return Text.findById(answer);
+            })
+        );
+        res.status(200).json(list);
+    } catch (err) {
+        next(err);
+    }
+}

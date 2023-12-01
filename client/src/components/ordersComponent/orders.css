@@ -1,0 +1,47 @@
+.orders {
+    width: 68%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 30%;
+    margin-top: 120px;
+}
+
+.oContainer {
+    margin-right: 20%;
+    background-color: #2f2f2f;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.oContainer h1 {
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #fff;
+}
+
+.oContainer span {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #B1AFAF;
+}
+
+.oContainer button {
+    margin: 5px 0 5px 20px;
+    width: 10%;
+    border: solid transparent;
+    border-radius: 8px;
+    display: flex;
+    font-size: 20px;
+    text-decoration-color: #000;
+    justify-content: center;
+    background-color: #D9D9D9;
+}
+
+.oContainer button:hover {
+    border: solid #000;
+    background-color: #B1AFAF;
+}

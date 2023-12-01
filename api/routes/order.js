@@ -1,5 +1,5 @@
 import express from "express";
-import { createOrder, deleteOrder, getOrder, getOrders, updateOrder } from "../controllers/order.js";
+import { createOrder, deleteOrder, getOrder, getOrderTexts, getOrders, updateOrder } from "../controllers/order.js";
 
 const router = express.Router();
 
@@ -13,5 +13,7 @@ router.delete("/:id/:userid", deleteOrder);
 router.get("/:id", getOrder);
 //GET ALL
 router.get("/", getOrders);
+//GET ORDER ANSWERS
+router.get("/:id/texts", getOrderTexts);
 
 export default router;

@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <div className="header">
-                <h1 className="title">Writler</h1>
+                <h1 className="title" onClick={()=>navigate('/home')}>Writler</h1>
                 <ul className="hList">
                     <li className="hListItem">
                         <button className="hButton" onClick={() => navigate(`/userpage/${user._id}`)}>{user.username || 'user'}</button>

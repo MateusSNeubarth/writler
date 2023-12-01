@@ -1,0 +1,25 @@
+.createOrder {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F2F2F;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer h1 {
+    background-color: #4D4D4D;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 30px;
+}
