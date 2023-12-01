@@ -7,7 +7,7 @@ import AnswersList from '../../components/answersList/AnswersList.jsx';
 const OrderPage = () => {
     const location = useLocation();
     const id = location.pathname.split('/')[2];
-    const { data, loading } = useFetch(`http://localhost:8800/api/orders/${id}`);
+    const { data, loading } = useFetch(`https://writler-api.onrender.com/api/orders/${id}`);
 
     console.log(data);
     return (

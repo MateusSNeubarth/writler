@@ -2,7 +2,7 @@ import useFetch from '../../hooks/useFetch';
 import './answersList.css';
 
 const AnswersList = ({ order_id }) => {
-    const { data, loading } = useFetch(`http://localhost:8800/api/orders/${order_id}/texts`);
+    const { data, loading } = useFetch(`https://writler-api.onrender.com/api/orders/${order_id}/texts`);
 
     return (
         <div className='answersList'>

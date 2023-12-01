@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
     const { user } = useContext(AuthContext);
-    const { data, loading } = useFetch(`http://localhost:8800/api/users/orders/${user._id}`);
+    const { data, loading } = useFetch(`https://writler-api.onrender.com/api/users/orders/${user._id}`);
     console.log(data);
     const navigate = useNavigate();
 

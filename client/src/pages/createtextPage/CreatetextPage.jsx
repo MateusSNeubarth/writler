@@ -11,7 +11,7 @@ const CreateTextPage = () => {
     const location = useLocation();
     const orderid = location.pathname.split('/')[2];
     const navigate = useNavigate();
-    const { data } = useFetch(`http://localhost:8800/api/orders/${orderid}`)
+    const { data } = useFetch(`https://writler-api.onrender.com/api/orders/${orderid}`)
     const [text, setText] = useState({
         title: undefined,
         body: undefined,
@@ -24,7 +24,7 @@ const CreateTextPage = () => {
     const handleClick = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`http://localhost:8800/api/texts/${user._id}/${orderid}`, text);
+            const res = await axios.post(`https://writler-api.onrender.com/api/texts/${user._id}/${orderid}`, text);
             console.log(res.data.details);
             navigate('/home');
         } catch (err) {

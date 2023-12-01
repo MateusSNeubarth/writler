@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Orders = () => {
     const { user } = useContext(AuthContext);
-    const { data, loading } = useFetch(`http://localhost:8800/api/orders/`);
+    const { data, loading } = useFetch(`https://writler-api.onrender.com/api/orders/`);
     const navigate = useNavigate();
 
     return (
