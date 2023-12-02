@@ -39,5 +39,7 @@ Primeira versão em produção do projeto
 
 > Funcionalidades básicas para o funcionamento do sistema
 
+> Sem funcionalidades de comunicação, feedback, avaliação e notificações
+
 # Autores
 - [Mateus Simões Neubarth](github.com/MateusSNeubarth) - 1292224400
