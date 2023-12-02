@@ -43,3 +43,4 @@ Primeira versão em produção do projeto
 
 # Autores
 - [Mateus Simões Neubarth](github.com/MateusSNeubarth) - 1292224400
+- [Gabriel Netto da Silva](github.com/gNeTTos) - 1292323773
