@@ -1,7 +1,7 @@
 # Writler
 
 # Sobre o Projeto
-Uma comunidade para mentes criativas pedirem escritas para escritores profissionais ou amadores (to do)
+Para a composição deste projeto, foi definido que o objetivo principal seria criar uma comunidade digital, onde se possa pedir por trechos escritos de ideias para livros, poemas, entre outros, para escritores profissionais e amadores. Para isso, foram diagnósticados requisitos funcionais e recursos necessários para o desenvolvimento do projeto, para o desenvolvimento do projeto foram usadas tecnologias atuais comumente ultilizadas por desenvolvederos acadêmicos e profissionais.
 
 # Sumário
 - [Sobre](#sobre-o-projeto)
